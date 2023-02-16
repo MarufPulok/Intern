@@ -1,0 +1,71 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+
+.blk {
+    background-color: #000;
+    color: #fff;
+    /* padding: 70px; */
+    /* margin: 10px; */
+    width: 400px;
+    border-radius: 200px;
+}
+
+img {
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.text {
+    margin-right: 30px;
+    background-color: rgb(239, 172, 53);
+}
+
+
+.hub {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height:1em;
+    width: 80%;
+}
+
+.hub1 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+video {
+    width: 400px;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: lower-greek;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+th:first-child {
+    background: brown;
+}
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
