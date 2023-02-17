@@ -141,14 +141,32 @@
 
 // myFunction();
 
-function main(number) {
-  console.log("Lets count from 0 to " + number);
-  for (let i = 0; i <= number; i++) {
-    setTimeout(function () {
-      console.log(i + "\n");
-    }, 1000);
-  }
-  console.log("Done!");
+// function main(number) {
+//   console.log("Lets count from 0 to " + number);
+//   for (let i = 0; i <= number; i++) {
+//     setTimeout(function () {
+//       console.log(i + "\n");
+//     }, 1000);
+//   }
+//   console.log("Done!");
+// }
+
+// main(5);
+
+// const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// num.splice(2, 2, "a",'b','c');
+// let text2 =  num.toString();
+// console.log(text2);
+
+// let name = 'maruf'
+// let age = 24
+
+// console.log(`name is ${name} age is ${age} years old`)
+
+let ob = {
+  name : 'mm',
+  age: 23
 }
 
-main(5);
+let { name, age } = ob
+console.log(name,age) 
