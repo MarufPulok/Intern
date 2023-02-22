@@ -170,3 +170,4 @@ let ob = {
 
 let { name, age } = ob
 console.log(name,age) 
+
