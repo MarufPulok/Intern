@@ -11,6 +11,7 @@ let getSubsets=(arr)=> {
   
   let checkSum = (arr, sum) => {
     let subsets = getSubsets(arr)
+    // console.log(subsets)
     for (let i = 0; i < subsets.length; i++) {
       if (subsets[i].reduce((a,b) => a+b, 0) === sum) {
         return subsets[i]
@@ -20,5 +21,6 @@ let getSubsets=(arr)=> {
   }
 
     let arr = [1,2,3,4,5,6,7,8,9,10]
-    console.log(checkSum(arr, 55))
+    // let arr = [1,2,3]
+    console.log(checkSum(arr, 50))
     console.log(checkSum(arr, 56))

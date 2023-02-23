@@ -7,7 +7,7 @@ class node {
 }
 
 function sum(root) {
-    if (root == null) {
+    if (root === null) {
         return 0
     }
     return root.data + sum(root.lchild) + sum(root.rchild)
@@ -21,6 +21,5 @@ root.lchild.rchild = new node(7)
 root.rchild.lchild = new node(13)
 root.rchild.rchild = new node(10)
 // root.rchild.rchild.rchild = new node(15)
-
 
 console.log(sum(root))

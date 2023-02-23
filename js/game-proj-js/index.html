@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="gameInfo">
+      <h1 id="level">Level: 1</h1>
+      <h1 id="target">Target: 0</h1>
+    </div>
+    <button id="btn">Play</button>
+    <p id="attempts">You've Got: 0 attempts!</p>
+    <p id="score">Circles-Generated: 0</p>
+    <p id="totalScore">Total-Score: 0</p>
+    <div id="circleContainer"></div>
+
+    <div id="pop-up">
+        <div id="pop-up-content">
+            <h1 id="pop-up-title">Game Over</h1>
+            <h2 id="pop-up-score">Final Score: <span id="final-score"></span></h2>
+            <h2 id="pop-up-target">Target was:</h2>
+            <p id="pop-up-text">You've got 0 attempts left!</p>
+            <button id="pop-up-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="./app.js" async defer></script>
+  </body>
+</html>
