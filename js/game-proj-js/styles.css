@@ -10,7 +10,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column: repeat(5, 1fr);
     margin-top: 50px;
-    /* transition */
+    
+    
   
 
 }

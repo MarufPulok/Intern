@@ -1,7 +1,11 @@
+import "../App.css"
+import GameTitle from "./GameTitle"
+
+
 const Circle = () => {
     return (
-        <div className="circle">
-            <h1>1</h1>
-        </div>
+        <div className="circle">1</div>
     )
 }
+
+export default Circle
