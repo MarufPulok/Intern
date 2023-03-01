@@ -1,13 +1,19 @@
-import "../App.css"
-import Circle from "./Circle"
+import "../App.css";
+// import Circle from "./Circle";
 
-const CircleContainer = () => {
-    return (
+
+const CircleContainer = (props) => {
+  
+
+  return (
+    <>
+      <div className="container">
         <div className="circle-container">
-            {/* <div className="circle"></div> */}
-            <Circle/>
+          {props.circle}        
         </div>
-    )
-}
+      </div>
+    </>
+  );
+};
 
-export default CircleContainer
+export default CircleContainer;
