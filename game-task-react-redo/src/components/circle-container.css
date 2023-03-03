@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle-container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    width: 600px;
+   overflow-y: auto;
+  }
