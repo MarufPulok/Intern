@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const itemsSlice = createSlice({
   name: 'items',
   initialState: [],
-  reducers: {
+  reducers: { 
     addItem: (state, action) => {
       state.push(action.payload);
     },

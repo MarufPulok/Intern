@@ -1,12 +1,15 @@
-const Item = ({item, onDelete}) => {
-    const handleDeleteClick = () => {
-        onDelete(item)
-    }
-    return (
-        <li>
-            {item} <button onClick={handleDeleteClick}>Delete</button>
-        </li>
-    )
-}
+import "./item.css"
 
-export default Item
+const Item = ({ item, onDelete }) => {
+    const handleDeleteClick = () => {
+      onDelete(item);
+    };
+  
+    return (
+      <li className="item">
+        {item} <button className="delete-btn" onClick={handleDeleteClick}>Delete</button>
+      </li>
+    );
+  };
+  
+  export default Item;
