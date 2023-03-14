@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem, deleteItem } from './features/itemsSlice';
 import ItemList from './components/ItemList';
@@ -7,7 +7,12 @@ import './App.css';
 function App() {
   const [inputValue, setInputValue] = useState('');
   const items = useSelector((state) => state.items);
+  // const isLoading = useSelector((state) => state.isLoading);
   const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(getItems());
+  // }, [dispatch]);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -29,7 +34,7 @@ function App() {
         <input className="input-field" type="text" value={inputValue} onChange={handleInputChange} />
         <button className="add-item-btn" onClick={handleAddItem}>Add Item</button>
       </div>
-      <ItemList className="item-list" items={items} onDelete={handleDeleteItem} />
+        <ItemList className="item-list" items={items} onDelete={handleDeleteItem} />
     </div>
   );
 }
