@@ -89,3 +89,42 @@ console.log(greetAgain(6,2))
 let calc: (a: number, b:string|number) => void
 
 calc = (a:number, b:string|number) => console.log(a,b) 
+
+//classes ts
+
+// class Invoice {
+//     client: string = 'abc'
+//     details: string = 'ass'
+//     amount: number = 0
+// }
+
+//but this is inconvenient.
+
+//we'll create a constructor
+class Invoice {
+    client: string;
+    details: string;
+    amount: number;
+
+    //we'll create a constructor
+    constructor(c:string, d:string, a:number ) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+
+    //method
+    format() {
+        return `${this.client} owes ${this.amount} ${this.details}`
+    }
+
+}
+
+
+//create object to instantiate
+const invoice = new Invoice('jake', 'debt', 48000); 
+const invoice2 = new Invoice('jake2', 'debt2', 480002); 
+
+console.log(invoice.format(), invoice2.format())
+
+let invoices:Invoice[] = []
